@@ -77,17 +77,17 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [X] Carregar dados no dataset cs_ops_raw_data do BigQuery.
 
-    [ ] Fase 2: Transformação de Dados (ELT - Transform)
+    [X] Fase 2: Transformação de Dados (ELT - Transform)
 
-        [ ] Iniciar o projeto dbt (cs_ops_dbt/).
+        [X] Iniciar o projeto dbt (cs_ops_dbt/).
 
-        [ ] Configurar sources (fontes) para ler do cs_ops_raw_data.
+        [X] Configurar sources (fontes) para ler do cs_ops_raw_data.
 
-        [ ] Criar modelos de staging (models/staging/) para limpar, padronizar e deduplicar.
+        [X] Criar modelos de staging (models/staging/) para limpar, padronizar e deduplicar.
 
-        [ ] Criar modelos de mart (models/marts/) com a tabela analítica final (fct_clientes_kpis).
+        [X] Criar modelos de mart (models/marts/) com a tabela analítica final (fct_clientes_kpis).
 
-        [ ] Executar dbt run e validar os dados limpos no dataset cs_ops_analytics.
+        [X] Executar dbt run e validar os dados limpos no dataset cs_ops_analytics.
 
     [ ] Fase 3: Análise & Modelagem (Machine Learning)
 

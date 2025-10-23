@@ -139,6 +139,6 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
 (Instruções detalhadas de instalação e execução serão adicionadas na Fase 5.)
 
-    LinkedIn: linkedin.com/in/[seu-linkedin-url]
+    LinkedIn: linkedin.com/in/[https://www.linkedin.com/in/jorge-gibin-a14428184/]
 
-    GitHub: github.com/[seu-github-url]
+    GitHub: github.com/[https://github.com/JGIBIN]

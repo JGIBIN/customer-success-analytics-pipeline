@@ -89,15 +89,15 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [X] Executar dbt run e validar os dados limpos no dataset cs_ops_analytics.
 
-    [ ] Fase 3: Análise & Modelagem (Machine Learning)
+    [X] Fase 3: Análise & Modelagem (Machine Learning)
 
-        [ ] Criar script/notebook (analysis/train_model.py).
+        [X] Criar script/notebook (analysis/train_model.py).
 
-        [ ] Ler dados limpos da tabela fct_clientes_kpis (do BigQuery).
+        [X] Ler dados limpos da tabela fct_clientes_kpis (do BigQuery).
 
-        [ ] Treinar modelo de classificação (Scikit-learn) para prever churn_status.
+        [X] Treinar modelo de classificação (Scikit-learn) para prever churn_status.
 
-        [ ] Salvar o modelo treinado (.pkl).
+        [X] Salvar o modelo treinado (.pkl).
 
     [ ] Fase 4: Visualização & Aplicação (BI e Web App)
 

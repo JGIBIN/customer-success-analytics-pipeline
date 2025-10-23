@@ -28,3 +28,18 @@ Happy modeling!
 [0m14:46:06.218419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6692425A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F60253E1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6026E3230>]}
 [0m14:46:06.218419 [debug] [MainThread]: Flushing usage events
 [0m14:46:07.586381 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:46:21.179429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD740ECC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD6E98740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD6E98A70>]}
+
+
+============================== 16:46:21.182423 | 7eb03443-fbcc-4644-9eb7-a3c60eda6ad5 ==============================
+[0m16:46:21.182423 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m16:46:21.183426 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'target_path': 'None', 'printer_width': '80', 'profiles_dir': 'C:\\Users\\ReDragon\\.dbt', 'invocation_command': 'dbt run', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m16:46:21.184455 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ReDragon\Desktop\customer-success-analytics-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:46:21.184861 [debug] [MainThread]: Command `dbt run` failed at 16:46:21.184861 after 0.16 seconds
+[0m16:46:21.185861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD78ACBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD6E98740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBD6E98A70>]}
+[0m16:46:21.185861 [debug] [MainThread]: Flushing usage events
+[0m16:46:22.270555 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_data  # <-- Isto deve ser 'raw_data'
+    database: cs-ops-analytics-pipeline
+    schema: cs_ops_raw_data
+    tables:
+      - name: raw_clientes
+      - name: raw_uso_produto
+      - name: raw_chamados_suporte 
+      - name: raw_churn_target

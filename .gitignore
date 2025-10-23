@@ -9,3 +9,10 @@ __pycache__/
 # Credenciais (Só por segurança)
 *.json
 *.env
+
+# Modelos de ML
+*.pkl
+*.joblib
+
+# Cache do script de analise
+analysis/__pycache__/

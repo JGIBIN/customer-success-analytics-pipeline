@@ -11,8 +11,6 @@ __pycache__/
 *.env
 
 # Modelos de ML
-*.pkl
-*.joblib
 
 # Cache do script de analise
 analysis/__pycache__/

@@ -1,0 +1,30 @@
+[0m14:44:30.628790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F666541D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F668BB3FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F668BB2600>]}
+
+
+============================== 14:44:30.636794 | 939ca0ee-5171-4ced-9ddf-4dcb1ca14dfd ==============================
+[0m14:44:30.636794 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m14:44:30.636794 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'write_json': 'True', 'use_colors': 'True', 'log_format': 'default', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\ReDragon\\.dbt', 'invocation_command': 'dbt init', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m14:44:30.652022 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ReDragon\.dbt
+[0m14:44:50.034535 [debug] [MainThread]: Starter project path: C:\Users\ReDragon\Desktop\customer-success-analytics-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m14:44:50.047593 [info ] [MainThread]: 
+Your new dbt project "cs_ops_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:44:50.049405 [info ] [MainThread]: Setting up your profile.
+[0m14:46:06.218419 [info ] [MainThread]: Profile cs_ops_dbt written to C:\Users\ReDragon\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:46:06.218419 [debug] [MainThread]: Command `dbt init` succeeded at 14:46:06.218419 after 95.71 seconds
+[0m14:46:06.218419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6692425A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F60253E1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6026E3230>]}
+[0m14:46:06.218419 [debug] [MainThread]: Flushing usage events
+[0m14:46:07.586381 [debug] [MainThread]: An error was encountered while trying to flush usage events

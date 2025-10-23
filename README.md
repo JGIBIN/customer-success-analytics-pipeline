@@ -53,7 +53,7 @@ Snippet de código
 
 Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de construção.
 
-    [ ] Fase 0: Configuração e Infraestrutura
+    [X] Fase 0: Configuração e Infraestrutura
 
         [X] Criar repositório no GitHub (customer-success-analytics-pipeline).
 

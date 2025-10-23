@@ -1,21 +1,23 @@
 <p align="center"> <img alt="Status" src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange"> <img alt="Tecnologias" src="https://img.shields.io/badge/Tecnologias-Python%20%7C%20GCP%20%7C%20dbt%20%7C%20SQL-blue"> <img alt="Output" src="https://img.shields.io/badge/Output-BigQuery%20%7C%20Streamlit%20%7C%20Power%20BI-green"> </p>
 
-Customer Success Analytics Pipeline
+# Customer Success Analytics Pipeline
 
-🎯 O Desafio de Negócio
+**🎯 O Desafio de Negócio**
 
 Em qualquer empresa de SaaS (como a TOTVS), a retenção de clientes é o principal pilar de crescimento. O grande desafio das equipes de Customer Success (CSM) é identificar proativamente quais clientes estão em risco de churn (cancelamento) para poderem atuar antes que seja tarde demais.
 
 Este projeto constrói o pipeline de dados completo para processar dados de uso, calcular Health Scores e treinar um modelo de predição de churn, transformando dados brutos em ações estratégicas de retenção.
 
-🏗️ Arquitetura da Solução
+---
+
+**🏗️ Arquitetura da Solução**
 
 O projeto seguirá uma arquitetura ELT (Extract, Load, Transform) moderna, que é escalável e robusta. Os dados são extraídos em Python, carregados em estado bruto no BigQuery, e só então transformados usando dbt e SQL.
 Snippet de código
 
-graph TD
-    subgraph "Ingestão (Python)"
-        A[Script Python<br>Geração de Lotes] --> B(GCP BigQuery<br>Dataset: cs_ops_raw_data);
+    graph TD
+        subgraph "Ingestão (Python)"
+            A[Script Python<br>Geração de Lotes] --> B(GCP BigQuery<br>Dataset: cs_ops_raw_data);
     end
 
     subgraph "Transformação (dbt)"
@@ -29,7 +31,9 @@ graph TD
         D --> G[Python / Scikit-learn<br>Modelo de Churn];
     end
 
-💻 Stack de Tecnologias
+---
+
+💻 **Stack de Tecnologias**
 
     Ingestão: Python (Pandas, Faker, pandas-gbq)
 
@@ -43,13 +47,15 @@ graph TD
 
     Ambiente & DevOps: VSCode, Git / GitHub
 
-🗺️ Roadmap do Projeto
+---
+
+🗺️ **Roadmap do Projeto**
 
 Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de construção.
 
     [ ] Fase 0: Configuração e Infraestrutura
 
-        [ ] Criar repositório no GitHub (customer-success-analytics-pipeline).
+        [X] Criar repositório no GitHub (customer-success-analytics-pipeline).
 
         [ ] Configurar projeto no Google Cloud (GCP).
 
@@ -111,7 +117,9 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [ ] (Opcional) Fazer deploy do app Streamlit no Community Cloud.
 
-📸 Vitrine do Projeto (Em Breve)
+---
+
+📸 **Vitrine do Projeto (Em Breve)**
 
 (Esta seção será preenchida com screenshots à medida que as fases forem concluídas)
 
@@ -125,7 +133,9 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
     Print 5: Aplicação "CS Ops Command Center" rodando no Streamlit.
 
-▶️ Como Executar (Em Breve)
+---
+
+▶️ **Como Executar (Em Breve)**
 
 (Instruções detalhadas de instalação e execução serão adicionadas na Fase 5.)
 

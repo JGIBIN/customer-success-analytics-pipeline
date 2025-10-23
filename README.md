@@ -57,15 +57,15 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [X] Criar repositório no GitHub (customer-success-analytics-pipeline).
 
-        [ ] Configurar projeto no Google Cloud (GCP).
+        [X] Configurar projeto no Google Cloud (GCP).
 
-        [ ] Ativar APIs do BigQuery e Cloud Storage.
+        [X] Ativar APIs do BigQuery e Cloud Storage.
 
-        [ ] Criar datasets no BigQuery: cs_ops_raw_data e cs_ops_analytics.
+        [X] Criar datasets no BigQuery: cs_ops_raw_data e cs_ops_analytics.
 
-        [ ] Configurar ambiente local (VSCode, Git, Python venv, .gitignore).
+        [X] Configurar ambiente local (VSCode, Git, Python venv, .gitignore).
 
-        [ ] Configurar autenticação (gcloud auth).
+        [X] Configurar autenticação (gcloud auth).
 
     [ ] Fase 1: Ingestão de Dados (ELT - Extract & Load)
 

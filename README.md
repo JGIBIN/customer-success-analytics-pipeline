@@ -4,7 +4,7 @@
 
 **🎯 O Desafio de Negócio**
 
-Em qualquer empresa de SaaS (como a TOTVS), a retenção de clientes é o principal pilar de crescimento. O grande desafio das equipes de Customer Success (CSM) é identificar proativamente quais clientes estão em risco de churn (cancelamento) para poderem atuar antes que seja tarde demais.
+Em qualquer empresa de SaaS, a retenção de clientes é o principal pilar de crescimento. O grande desafio das equipes de Customer Success (CSM) é identificar proativamente quais clientes estão em risco de churn (cancelamento) para poderem atuar antes que seja tarde demais.
 
 Este projeto constrói o pipeline de dados completo para processar dados de uso, calcular Health Scores e treinar um modelo de predição de churn, transformando dados brutos em ações estratégicas de retenção.
 

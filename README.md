@@ -1,22 +1,16 @@
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange)
-![Tecnologias](https://img.shields.io/badge/Tecnologias-Python%20%7C%20GCP%20%7C%20dbt%20%7C%20SQL-blue)
-![Output](https://img.shields.io/badge/Output-BigQuery%20%7C%20Streamlit%20%7C%20Power%20BI-green)
+<p align="center"> <img alt="Status" src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange"> <img alt="Tecnologias" src="https://img.shields.io/badge/Tecnologias-Python%20%7C%20GCP%20%7C%20dbt%20%7C%20SQL-blue"> <img alt="Output" src="https://img.shields.io/badge/Output-BigQuery%20%7C%20Streamlit%20%7C%20Power%20BI-green"> </p>
 
 Customer Success Analytics Pipeline
 
-Descrição
+🎯 O Desafio de Negócio
 
-Pipeline de dados End-to-End para Customer Success (CS Ops) focado em predição de churn. Stack: Python (ingestão), GCP BigQuery (DWH), dbt + SQL (transformação) e Streamlit/Power BI (análise).
+Em qualquer empresa de SaaS (como a TOTVS), a retenção de clientes é o principal pilar de crescimento. O grande desafio das equipes de Customer Success (CSM) é identificar proativamente quais clientes estão em risco de churn (cancelamento) para poderem atuar antes que seja tarde demais.
 
-Objetivo do Projeto
+Este projeto constrói o pipeline de dados completo para processar dados de uso, calcular Health Scores e treinar um modelo de predição de churn, transformando dados brutos em ações estratégicas de retenção.
 
-Em empresas de SaaS (como a TOTVS), o maior desafio é a retenção de clientes. Equipes de Customer Success (CSM) precisam identificar proativamente quais clientes estão em risco de churn (cancelamento) para poderem atuar antes que seja tarde demais.
+🏗️ Arquitetura da Solução
 
-Este projeto tem como objetivo construir o pipeline de dados completo para processar, limpar e analisar dados de clientes, permitindo a criação de Health Scores e modelos de predição de churn.
-
-Arquitetura Proposta
-
-O projeto seguirá uma arquitetura ELT (Extract, Load, Transform) moderna, que é escalável e robusta.
+O projeto seguirá uma arquitetura ELT (Extract, Load, Transform) moderna, que é escalável e robusta. Os dados são extraídos em Python, carregados em estado bruto no BigQuery, e só então transformados usando dbt e SQL.
 Snippet de código
 
 graph TD
@@ -35,7 +29,7 @@ graph TD
         D --> G[Python / Scikit-learn<br>Modelo de Churn];
     end
 
-Tecnologias Planejadas
+💻 Stack de Tecnologias
 
     Ingestão: Python (Pandas, Faker, pandas-gbq)
 
@@ -47,9 +41,9 @@ Tecnologias Planejadas
 
     Visualização: Streamlit & Power BI (ou Looker Studio)
 
-    Ambiente: VSCode, Git / GitHub
+    Ambiente & DevOps: VSCode, Git / GitHub
 
-Roadmap do Projeto
+🗺️ Roadmap do Projeto
 
 Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de construção.
 
@@ -61,9 +55,9 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [ ] Ativar APIs do BigQuery e Cloud Storage.
 
-        [ ] Criar datasets no BigQuery: cs_ops_raw_data (para dados brutos) e cs_ops_analytics (para dados limpos).
+        [ ] Criar datasets no BigQuery: cs_ops_raw_data e cs_ops_analytics.
 
-        [ ] Configurar ambiente local (VSCode, Git, Python venv).
+        [ ] Configurar ambiente local (VSCode, Git, Python venv, .gitignore).
 
         [ ] Configurar autenticação (gcloud auth).
 
@@ -73,9 +67,9 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [ ] Simular dados "sujos" (nulos, duplicatas, formatos errados).
 
-        [ ] Implementar geração e carga de dados em lotes (batches).
+        [ ] Implementar geração e carga de dados em lotes (batches) para escalar (+1M linhas).
 
-        [ ] Carregar milhões de registros no dataset cs_ops_raw_data do BigQuery.
+        [ ] Carregar dados no dataset cs_ops_raw_data do BigQuery.
 
     [ ] Fase 2: Transformação de Dados (ELT - Transform)
 
@@ -83,7 +77,7 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [ ] Configurar sources (fontes) para ler do cs_ops_raw_data.
 
-        [ ] Criar modelos de staging (models/staging/) para limpar, padronizar e deduplicar os dados.
+        [ ] Criar modelos de staging (models/staging/) para limpar, padronizar e deduplicar.
 
         [ ] Criar modelos de mart (models/marts/) com a tabela analítica final (fct_clientes_kpis).
 
@@ -111,16 +105,30 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
     [ ] Fase 5: Documentação e Finalização
 
-        [ ] Adicionar screenshots do projeto (BQ, dbt DAG, Dashboards, App).
+        [ ] Adicionar screenshots do projeto na seção "Vitrine".
 
-        [ ] Atualizar o README.md com instruções finais de "Como Executar".
+        [ ] Preencher a seção "Como Executar" com o passo a passo final.
 
         [ ] (Opcional) Fazer deploy do app Streamlit no Community Cloud.
 
-Autor
+📸 Vitrine do Projeto (Em Breve)
 
-[Seu Nome Aqui]
+(Esta seção será preenchida com screenshots à medida que as fases forem concluídas)
 
-    LinkedIn: [seu-linkedin-url]
+    Print 1: Amostra dos dados sujos no BigQuery (raw_data).
 
-    GitHub: [seu-github-url]
+    Print 2: Amostra dos dados limpos após o dbt run (analytics).
+
+    Print 3: Gráfico de Linhagem de Dados (DAG) do dbt docs.
+
+    Print 4: Dashboard final no Power BI / Looker Studio.
+
+    Print 5: Aplicação "CS Ops Command Center" rodando no Streamlit.
+
+▶️ Como Executar (Em Breve)
+
+(Instruções detalhadas de instalação e execução serão adicionadas na Fase 5.)
+
+    LinkedIn: linkedin.com/in/[seu-linkedin-url]
+
+    GitHub: github.com/[seu-github-url]

@@ -57,13 +57,13 @@ def dirty_customer_data(df):
     df.loc[dirty_indices, 'plano'] = [random.choice(dirty_plans) for _ in range(len(dirty_indices))]
     
     # P3: Wrong Data Type (MRR as string "R$ 1.234,50")
-    df['mrr_R$'] = df['mrr_R$'].astype(str) # Convert all to string
+    df['mrr_raw'] = df['mrr_raw'].astype(str) # Convert all to string
     # Format 30% as currency
     for idx in df.sample(frac=0.3).index:
-        value = df.at[idx, 'mrr_R$']
-        df.at[idx, 'mrr_R$'] = f"R$ {float(value):.2f}".replace('.', ',')
+        value = df.at[idx, 'mrr_raw']
+        df.at[idx, 'mrr_raw'] = f"R$ {float(value):.2f}".replace('.', ',')
     # Insert 2% of completely bad values
-    df.loc[df.sample(frac=0.02).index, 'mrr_R$'] = 'Inválido'
+    df.loc[df.sample(frac=0.02).index, 'mrr_raw'] = 'Inválido'
     return df
 
 def dirty_ticket_data(df):
@@ -133,7 +133,7 @@ for i in range(0, TOTAL_CUSTOMERS, CHUNK_SIZE):
         
         customer_data_list.append({
             'id_cliente': customer_id, 'nome_empresa': fake.company(),
-            'plano': plan, 'mrr_R$': mrr, 'data_contrato': contract_date
+            'plano': plan, 'mrr_raw': mrr, 'data_contrato': contract_date
         })
         
         # --- CHURN Table (Target) ---

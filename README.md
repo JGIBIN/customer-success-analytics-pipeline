@@ -67,15 +67,15 @@ Este é um projeto em desenvolvimento. As etapas abaixo representam o plano de c
 
         [X] Configurar autenticação (gcloud auth).
 
-    [ ] Fase 1: Ingestão de Dados (ELT - Extract & Load)
+    [X] Fase 1: Ingestão de Dados (ELT - Extract & Load)
 
-        [ ] Desenvolver script Python (ingestion/run_ingestion.py).
+        [X] Desenvolver script Python (ingestion/run_ingestion.py).
 
-        [ ] Simular dados "sujos" (nulos, duplicatas, formatos errados).
+        [X] Simular dados "sujos" (nulos, duplicatas, formatos errados).
 
-        [ ] Implementar geração e carga de dados em lotes (batches) para escalar (+1M linhas).
+        [X] Implementar geração e carga de dados em lotes (batches) para escalar (+1M linhas).
 
-        [ ] Carregar dados no dataset cs_ops_raw_data do BigQuery.
+        [X] Carregar dados no dataset cs_ops_raw_data do BigQuery.
 
     [ ] Fase 2: Transformação de Dados (ELT - Transform)
 

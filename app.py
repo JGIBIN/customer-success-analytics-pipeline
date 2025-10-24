@@ -39,16 +39,26 @@ print(f"Model expects features: {features}")
 
 # --- 3. Interface Streamlit (Layout Aprimorado) ---
 
-st.set_page_config(layout="wide", page_title="Central de Comando Client Ops: Previsão de Churn")
+st.set_page_config(layout="wide", page_title="CS Ops Command Center")
 
-st.image("https://img.icons8.com/plasticine/100/000000/line-chart.png", width=80) # Adiciona um ícone
-st.title("Central de Comando Client Ops: Previsão de Churn")
-st.markdown("Insira os dados do cliente abaixo para obter a probabilidade de churn em tempo real.")
+# Criar colunas para o cabeçalho
+col_logo, col_title = st.columns([1, 5]) # Coluna do logo 1/6 da largura, título 5/6. Ajuste [1, 5] se necessário.
+
+with col_logo:
+    # Coloque a imagem na primeira coluna, com uma largura menor
+    st.image("assets\Gemini_Generated_Image_c5gwwic5gwwic5gw.png", width=150) # Ajuste o width (ex: 80, 100, 120)
+
+with col_title:
+    # Coloque o título e subtítulo na segunda coluna
+    st.title("Central de Comando CS Ops: Previsão de Churn")
+    st.markdown("Insira os dados do cliente abaixo para obter a probabilidade de churn em tempo real.")
 
 st.divider() # Adiciona uma linha divisória
 
-# Cria colunas para organizar os inputs
+# Cria colunas para organizar os inputs (código existente)
 col1, col2, col3 = st.columns(3)
+
+# ... (restante do código das colunas de input e previsão) ...
 
 # Dicionário para guardar os inputs do usuário
 input_data = {}

@@ -14,5 +14,3 @@ __pycache__/
 
 # Cache do script de analise
 analysis/__pycache__/
-
-assets/

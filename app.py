@@ -46,7 +46,7 @@ col_logo, col_title = st.columns([1, 5]) # Coluna do logo 1/6 da largura, títul
 
 with col_logo:
     # Coloque a imagem na primeira coluna, com uma largura menor
-    st.image("assets\Gemini_Generated_Image_c5gwwic5gwwic5gw.png", width=150) # Ajuste o width (ex: 80, 100, 120)
+    st.image("assets/Gemini_Generated_Image_c5gwwic5gwwic5gw.png", width=150) # Ajuste o width (ex: 80, 100, 120)
 
 with col_title:
     # Coloque o título e subtítulo na segunda coluna
